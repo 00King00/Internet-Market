@@ -94,7 +94,7 @@ data(){
 		drawer: true,
 		mini: false,
 		side_bar_menu: [
-			{ title: 'Home', icon: 'home', path: '/home'},
+			{ title: 'Home', icon: 'home', path: '/'},
 			{ title: 'Cart', icon: 'shopping_cart', path: '/cart'},
 			{ title: 'Website settings', icon: 'bug_report', path: '/website-settings'},
 			{ title: 'Other page', icon: 'edit', path: '/other'},
