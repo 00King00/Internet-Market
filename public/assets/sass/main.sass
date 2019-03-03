@@ -1,0 +1,62 @@
+body
+	font-size: 14px
+h1
+	margin: 40px 0
+img
+	max-width: 100%
+.product
+	.peculiar-properties.show-tablet
+		height: 72px
+		border: none
+		margin: 0 0 15px 0
+		padding: 0
+		table
+			color: #5a5a5a
+			display: inline-block
+			font-size: 11px
+			height: 72px
+			overflow: hidden
+	// @include breakpoint(tablet)
+	// 	text-align: left
+	// 	border: 1px solid #d4d8db
+	// 	padding: 20px
+	// 	margin-right: -1px
+	// 	margin-top: -1px
+	// 	min-height: 391px
+	&__stripe
+		position: absolute
+		top: 0
+		left: 0
+	&__img
+		text-align: center
+		margin: 20px 0
+		height: 120px
+		&:before
+			vertical-align: middle
+			content: ''
+			display: inline-block
+			height: 100%
+		a
+			display: inline-block
+			vertical-align: middle
+	&__name
+		font-size: 13px
+		font-weight: bold
+		text-decoration: none
+		height: 45px
+		overflow: hidden
+		cursor: pointer
+		&:hover
+			color: #f2762e
+	&__text
+		font-size: 11px
+		font-family: 'Arial', sans-serif
+		color: #5a5a5a
+		line-height: 1.7
+		height: 72px
+		overflow: hidden
+	&__price
+		font-size: 18px
+		font-family: 'gothamproblack', sans-serif
+		margin: 15px 0
+		color: #f2762e
