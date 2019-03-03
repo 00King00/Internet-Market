@@ -19,7 +19,12 @@ export default{
 		AppHeader,
 		AppFooter
 	},
-	
+	created(){
+		this.$on('add-product', product)
+	}
+	methods:{
+
+	}
 }
 </script>
 <style lang="scss">
