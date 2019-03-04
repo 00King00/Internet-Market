@@ -7,9 +7,25 @@ export default {
   name: '',
 	data(){
 		return{
-
+			cartProduct: [],
 
 		}
+	},
+	computed:{
+		Products(){
+			this.cartProduct = this.$bus.$data.cartProduct
+		}
+	},
+	created(){
+		this.cartProduct = this.$bus.$data.cartProduct
+		console.log( this.cartProduct);
+		let cookiesCartProduct = {};
+		this.cartProduct.map((p, i)=> {
+			cookiesCartProduct[i] = p
+		});
+		this.$cookies.set('cookiesCartProduct', cookiesCartProduct);
+		console.log(this.$cookies.get('cookiesCartProduct'))
+
 	},
 	methods:{
 

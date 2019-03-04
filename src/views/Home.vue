@@ -157,10 +157,44 @@ export default {
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
 					price: 1100
 				},
-
-
+			],
+			test:[
+				{
+					stripe:"/assets/images/new_item.png",
+					img: "/assets/images/box_01.png",
+					name: "Бокс автомобильный Евродеталь Эклипс 300",
+					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
+					price: 1100
+				},
+				{
+					stripe: null,
+					img: "/assets/images/box_02.png",
+					name: "Бокс автомобильный Евродеталь Эклипс 500",
+					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
+					price: 2400
+				},
+				{
+					stripe:"/assets/images/new_item.png",
+					img: "/assets/images/box_03.png",
+					name: "Грузовой бокс HAPRO Traxer 6.6 Silver Grey HP 25903",
+					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
+					price: 850
+				},
+				{
+					stripe: "/assets/images/sale.png",
+					img: "/assets/images/box_04.png",
+					name: "Грузовой бокс Silver Grey HP 25903",
+					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
+					price: 500
+				},
+				{
+					stripe: null,
+					img: "/assets/images/box_05.png",
+					name: "Бокс автомобильный Евродеталь 5",
+					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
+					price: 1666
+				},
 			]
-
 		}
 	},
 	methods:{
@@ -171,16 +205,25 @@ export default {
 				name: product.name,
 				text: product.text ,
 				price: product.price
-			}
-			this.$cookies.set('products', addProduct);
-			//console.log(product);
-		
-			console.log(this.$cookies.get('products'))
-		},
-		testCookie(){
-			let producuts = this.$cookie.get('products');
+			};
+			let products = this.$bus.$data.cartProduct;
 			console.log(products);
-		}
+			products.push(product);
+			this.$bus.$data.cartProduct = products
+			// let test = this.test;
+			// let test1 = {};
+			// test.map((p, i)=> {
+			// 	test1[i] = {
+			// 				img: p.img ,
+			// 				name: p.name,
+			// 				price: p.price
+			// 			}
+			// });
+			// console.log(test1);
+			// this.$cookies.set('test1', test1);
+			// console.log(this.$cookies.get('test1'))
+		},
+
 	}
 
 }
