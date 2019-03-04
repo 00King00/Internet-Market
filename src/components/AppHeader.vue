@@ -61,10 +61,9 @@ nav
 			v-btn(flat @click='signup_dialog = true') Signup
 			v-btn(flat @click='login_dialog = true') Login
 			v-btn(flat fav)
-				v-badge(color="transparent" lg)
+				v-badge(color="warning")
 					span(slot="badge") 0
-					v-icon  shopping_cart
-			
+					v-icon(medium)  shopping_cart
 </template>
 
 <script>
@@ -87,18 +86,6 @@ data(){
 			{ title: 'Other page', icon: 'edit', path: '/other'},
 			{ title: 'Support groups', icon: 'contact_support', path: '/support-groups'},
 		],
-		drop_power_menu: [
-			{ title: 'Click Me' },
-			{ title: 'Click Me' },
-			{ title: 'Click Me' },
-			{ title: 'Click Me 2' }
-		],
-		country_menu:[
-			{ title: 'country_menu' },
-			{ title: 'country_menu' },
-			{ title: 'country_menu' },
-			{ title: 'country_menu 2' }
-		]
 
 	}
 },
@@ -118,8 +105,7 @@ methods:{
 	//flex: initial */
 .v-badge__badge
 	top: -4px
-.v-btn
-	min-width: 60px
+
 .header
 	height: 100%
 .pl-12

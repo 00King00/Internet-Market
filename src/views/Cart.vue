@@ -1,6 +1,33 @@
 <template lang="pug">
-div
-	h1 This is a Cart page
+v-container
+	v-layout(align-content-space-between)
+		v-flex(sm2 )
+			img(src="/assets/images/box_01.png")
+		v-flex(sm6)
+			v-card
+				v-card-title.font-weight-black.title Бокс автомобильный Евродеталь Эклипс 300
+		v-flex(sm1)
+			v-card
+				v-layout(justify-center align-center)
+					v-card-title.warning--text.font-weight-bold.title.px-0 1100 $
+		v-flex(sm2)
+			v-card
+				v-layout(justify-space-around align-center)
+					v-flex
+						v-btn.mx-1(fab small color="warning")
+							v-icon add
+					v-flex
+						span.font-weight-bold.title 2
+					v-flex
+						v-btn.mx-1(fab small color="warning")
+							v-icon remove
+
+		v-flex(sm1)
+			v-card
+				v-layout(justify-center align-center)
+					v-card-title.warning--text.font-weight-bold.title.px-0 1100 $
+
+
 </template>
 <script>
 export default {
