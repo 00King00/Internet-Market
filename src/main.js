@@ -4,6 +4,8 @@ import router from './router'
 import 'vuetify/dist/vuetify.min.css'
 import '@/assets/sass/main.sass'
 import Vuetify from 'vuetify'
+import VueCookies from 'vue-cookies'
+Vue.use(VueCookies);
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false

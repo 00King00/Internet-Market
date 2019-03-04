@@ -20,8 +20,7 @@ export default{
 		AppFooter
 	},
 	created(){
-		this.$on('add-product', product)
-	}
+	},
 	methods:{
 
 	}

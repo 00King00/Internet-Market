@@ -1,11 +1,11 @@
 <template lang="pug">
 .home
-	v-card.text-sm-left
+	v-card.text-sm-left(@click.native="testCookie")
 		v-card-text Title
 	v-container(fluid grid-list-md :class="{'px-0': $vuetify.breakpoint.xsOnly}")
 		v-layout(wrap)
 			v-flex(xs6 md4 lg3 v-for="(product, index) in products" :key="`product${index}`")
-				v-card
+				v-card(hover)
 					v-card-text
 						.product
 							.product__stripe(v-if="product.stripe")
@@ -165,8 +165,21 @@ export default {
 	},
 	methods:{
 		addProduct(product){
-			this.$emit("add-product", product)
-			
+			let addProduct = {
+				stripe: product.stripe,
+				img: product.img ,
+				name: product.name,
+				text: product.text ,
+				price: product.price
+			}
+			this.$cookies.set('products', addProduct);
+			//console.log(product);
+		
+			console.log(this.$cookies.get('products'))
+		},
+		testCookie(){
+			let producuts = this.$cookie.get('products');
+			console.log(products);
 		}
 	}
 
