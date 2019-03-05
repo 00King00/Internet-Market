@@ -60,7 +60,7 @@ nav
 		v-toolbar-items
 			v-btn(flat @click='signup_dialog = true') Signup
 			v-btn(flat @click='login_dialog = true') Login
-			v-btn(flat fav)
+			v-btn(flat to='/cart')
 				v-badge(color="warning")
 					span(slot="badge" v-if="carQuantity") {{carQuantity}}
 					v-icon(medium)  shopping_cart

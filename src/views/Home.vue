@@ -185,7 +185,6 @@ export default {
 			this.$bus.$data.cartProduct = products;
 		},
 	}
-
 }
 </script>
 <style scoped lang="sass">
