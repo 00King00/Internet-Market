@@ -36,126 +36,144 @@ export default {
 					img: "/assets/images/box_01.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 300",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1100
+					price: 1100,
+					quantity: 1
 				},
 				{
 					stripe: null,
 					img: "/assets/images/box_02.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 500",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 2400
+					price: 2400,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_03.png",
 					name: "Грузовой бокс HAPRO Traxer 6.6 Silver Grey HP 25903",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 850
+					price: 850,
+					quantity: 1
 				},
 				{
 					stripe: "/assets/images/sale.png",
 					img: "/assets/images/box_04.png",
 					name: "Грузовой бокс Silver Grey HP 25903",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 500
+					price: 500,
+					quantity: 1
 				},
 				{
 					stripe: null,
 					img: "/assets/images/box_05.png",
 					name: "Бокс автомобильный Евродеталь 5",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1666
+					price: 1666,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_01.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 300",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1100
+					price: 1100,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_01.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 300",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1100
+					price: 1100,
+					quantity: 1
 				},
 				{
 					stripe: null,
 					img: "/assets/images/box_02.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 500",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 2400
+					price: 2400,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_03.png",
 					name: "Грузовой бокс HAPRO Traxer 6.6 Silver Grey HP 25903",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 850
+					price: 850,
+					quantity: 1
 				},
 				{
 					stripe: "/assets/images/sale.png",
 					img: "/assets/images/box_04.png",
 					name: "Грузовой бокс Silver Grey HP 25903",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 500
+					price: 500,
+					quantity: 1
 				},
 				{
 					stripe: null,
 					img: "/assets/images/box_05.png",
 					name: "Бокс автомобильный Евродеталь 5",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1666
+					price: 1666,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_01.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 300",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1100
+					price: 1100,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_01.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 300",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1100
+					price: 1100,
+					quantity: 1
 				},
 				{
 					stripe: null,
 					img: "/assets/images/box_02.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 500",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 2400
+					price: 2400,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_03.png",
 					name: "Грузовой бокс HAPRO Traxer 6.6 Silver Grey HP 25903",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 850
+					price: 850,
+					quantity: 1
 				},
 				{
 					stripe: "/assets/images/sale.png",
 					img: "/assets/images/box_04.png",
 					name: "Грузовой бокс Silver Grey HP 25903",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 500
+					price: 500,
+					quantity: 1
 				},
 				{
 					stripe: null,
 					img: "/assets/images/box_05.png",
 					name: "Бокс автомобильный Евродеталь 5",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1666
+					price: 1666,
+					quantity: 1
 				},
 				{
 					stripe:"/assets/images/new_item.png",
 					img: "/assets/images/box_01.png",
 					name: "Бокс автомобильный Евродеталь Эклипс 300",
 					text: "Максимально увеличивает объем. Водонепроницаемая. Плечевой ремень и ручки.",
-					price: 1100
+					price: 1100,
+					quantity: 1
 				},
 			],
 		}

@@ -62,7 +62,7 @@ nav
 			v-btn(flat @click='login_dialog = true') Login
 			v-btn(flat fav)
 				v-badge(color="warning")
-					span(slot="badge") 0
+					span(slot="badge" v-if="carQuantity") {{carQuantity}}
 					v-icon(medium)  shopping_cart
 </template>
 
@@ -87,6 +87,11 @@ data(){
 			{ title: 'Support groups', icon: 'contact_support', path: '/support-groups'},
 		],
 
+	}
+},
+computed:{
+	carQuantity(){
+		return this.$bus.$data.cartProduct.length
 	}
 },
 methods:{
