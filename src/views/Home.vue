@@ -1,7 +1,5 @@
 <template lang="pug">
 .home
-	v-card.text-sm-left(@click.native="testCookie")
-		v-card-text Title
 	v-container(fluid grid-list-md :class="{'px-0': $vuetify.breakpoint.xsOnly}")
 		v-layout(wrap)
 			v-flex(xs6 md4 lg3 v-for="(product, index) in products" :key="`product${index}`")
@@ -10,7 +8,7 @@
 						.product
 							.product__stripe(v-if="product.stripe")
 								img(:src="product.stripe" alt="foto")
-							v-btn(flat fab absolute right )
+							v-btn(flat fab absolute right)
 								v-icon favorite_border
 							.product__img
 								a(href="#")
@@ -190,6 +188,7 @@ export default {
 <style scoped lang="sass">
 .v-btn.v-btn--absolute
 	top: 0px
+	z-index: 1
 a
 	color: #007bff
 	text-decoration: none
